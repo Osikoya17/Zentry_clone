@@ -221,7 +221,7 @@ body {
   bottom: 0;
   left: 0;
   animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15)
-    ease-in-out;
+  ease-in-out;
 }
 
 .three-body__dot:nth-child(3) {
