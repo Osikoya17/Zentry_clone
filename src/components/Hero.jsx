@@ -18,6 +18,8 @@ const Hero = () => {
 
   const totalVideos = 3;
   const nextVdRef = useRef(null);
+  const currentVdRef = useRef(null);
+  const mainVdRef = useRef(null);
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
@@ -106,7 +108,7 @@ const Hero = () => {
                 className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
               >
                 <video
-                  ref={nextVdRef}
+                  ref={currentVdRef}
                   src={getVideoSrc((currentIndex % totalVideos) + 1)}
                   loop
                   muted
@@ -127,6 +129,7 @@ const Hero = () => {
             onLoadedData={handleVideoLoad}
           />
           <video
+            ref={mainVdRef}
             src={getVideoSrc(
               currentIndex === totalVideos - 1 ? 1 : currentIndex
             )}
