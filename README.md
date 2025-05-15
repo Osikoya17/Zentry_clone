@@ -19,7 +19,7 @@ A blazing-fast React project built with [Vite](https://vitejs.dev/) to power a f
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/zentry-clone.git
+git clone https://github.com/Osikoya17/zentry-clone.git
 cd zentry-clone
 ```
 
